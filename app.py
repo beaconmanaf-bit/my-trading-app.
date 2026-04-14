@@ -1,3 +1,11 @@
+import streamlit as st
+import pandas as pd
+import plotly.express as px
+import yfinance as yf
+# Page Config
+st.set_page_config(page_title="AI Trading Analyzer", layout="wide")
+
+# 1. Load your uploaded data
 @st.cache_data
 def load_data():
     # Try different encodings until one works
