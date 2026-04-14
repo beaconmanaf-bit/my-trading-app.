@@ -9,7 +9,7 @@ st.set_page_config(page_title="AI Trading Analyzer", layout="wide")
 # 1. Load your uploaded data
 @st.cache_data
 def load_data():
-    df = pd.read_csv('Rearranged_Stock_Screener-1.xlsx - High_ROCE_ROE.csv')
+    df = pd.read_csv('data.csv')
     # Column mapping based on your file structure
     cols = ['ID', 'Stock_Name', 'Price', 'PE', 'MarketCap', 'DivYield', 
             'NP_Qtr', 'Profit_Var', 'ROCE', 'ROE', 'Sales_Var', 'D_E', 'P_B', 'Reserves']
